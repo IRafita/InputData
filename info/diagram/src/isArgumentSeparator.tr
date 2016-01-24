@@ -1,0 +1,36 @@
+is argument separator
+.PS
+down;
+box "is Argument" "separator"
+arrow;
+S: ellipse "S";
+
+# primer cas, on suposem que tot funciona correctament
+arrow "Y" ljust;
+box "t = s.peek ()";
+arrow;
+P: ellipse "t=='('";
+#), nomes per evitar parenteisis rars del vim
+
+arrow "N" ljust;
+box width 1 "q.add ( s.pop () )";
+move to last box .e;
+right;
+arc;
+line 2.5;
+arc;
+arrow to S .e;
+
+# final correcte
+move to P .w;
+left;
+arrow "Y" "";
+circle "R";
+
+# Al final de tot, es un possible error
+move to S .w;
+left;
+arrow "N" "";
+circle "Error";
+move to S .s;
+.PE

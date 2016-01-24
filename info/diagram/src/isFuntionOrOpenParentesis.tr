@@ -1,0 +1,9 @@
+is funtion or (
+.PS
+down;
+box width 1.75 "is funtion or Open parentesis";
+arrow;
+box "s.add ( t )";
+arrow;
+box "R";
+.PE

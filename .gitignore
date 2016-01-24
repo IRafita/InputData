@@ -1,0 +1,9 @@
+# sortides del vim
+*.swp
+
+# sortides del compilar
+*.o
+parsing
+
+# sortida del PostScript
+*.eps

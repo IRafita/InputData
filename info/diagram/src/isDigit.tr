@@ -1,0 +1,9 @@
+is digit
+.PS
+down;
+box "is digit";
+arrow;
+box "q.add ( t )";
+arrow;
+box "R";
+.PE

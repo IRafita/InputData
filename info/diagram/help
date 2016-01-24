@@ -1,0 +1,33 @@
+ellipse
+box
+	width 1.2
+	height
+	dashed [n]
+	dotted [n]
+	rad
+circle
+arc (cw)
+	rad[ius]
+	diam[eter]
+
+arrow
+line
+	<-->
+
+spline
+	then
+	->
+
+
+
+move to ...;
+
+name
+A: box ...;
+
+"text"
+	aligned
+	ljust
+	rjust
+	above
+	below
