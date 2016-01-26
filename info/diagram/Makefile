@@ -23,3 +23,15 @@ isOperator:
 	ps2eps isOperator.ps
 	rm isOperator.ps
 	mv isOperator.eps eps
+isCloseParentesis:
+	pic src/isCloseParentesis.tr | groff > isCloseParentesis.ps
+	rm eps/isCloseParentesis.eps -f
+	ps2eps isCloseParentesis.ps
+	rm isCloseParentesis.ps
+	mv isCloseParentesis.eps eps
+token:
+	pic src/token.tr | groff > token.ps
+	rm eps/token.eps -f
+	ps2eps token.ps
+	rm token.ps
+	mv token.eps eps

@@ -1,1 +1,58 @@
-Pendent de fer :)
+is Operator
+.PS
+down;
+box "is Opertator";
+arrow;
+S: ellipse "S";
+arrow "Y" ljust;
+box "o = s.peek";
+arrow;
+O: ellipse "o.is O";
+arrow "Y" ljust;
+T: ellipse "t.is RA";
+move;			# Aqui queda estudiar una mica la cituacio
+box "q.add s.pop";
+arrow;
+B: box "s.push t";
+arrow;
+circle "R";
+
+# ara a fer el que falta
+left;
+move to T .w;
+arc -> "Y" rjust;
+T1: ellipse "t \< 0";
+
+move to T1 .e;
+right;
+arc cw -> "Y";
+
+move to T1 .w;
+left;
+arc -> diameter .75 "N";
+
+# el gran no
+move to S .w;
+left;
+line 0.75 ->;
+arc;
+line 4.5;
+arc;
+arrow to B .w;
+
+move to T .e;
+right;
+arc cw ->;
+T2: ellipse "t \<= 0";
+line -> "N" ljust;
+line;
+arc cw ->;
+
+move to T2 .w;
+arc -> "Y";
+
+move to O .w;
+left;
+arrow .75 "N" "";
+arc;
+.PE

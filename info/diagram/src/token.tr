@@ -1,0 +1,54 @@
+Idea general
+.PS
+down;
+S: ellipse "S";
+arrow "Y" ljust;
+box "r = S.next";
+arrow;
+D: ellipse "r.isD";
+arrow "N" ljust;
+O: ellipse "r.isO";
+arrow "N" ljust;
+F: ellipse "r.isF";
+arrow "N" ljust;
+A: ellipse "r.isA";
+arrow "N" ljust;
+P: ellipse "r.isP";
+arrow "N" ljust;
+C: ellipse "r.isC";
+arrow "N" ljust;
+circle "Error";
+
+move to D .e;
+arrow right "Y" "";
+box "is Digit";
+arc ->;
+
+move to O .e;
+arrow right "Y" "";
+box "is Operator";
+arc ->;
+
+move to F .e;
+arrow right "Y" "";
+box "is Function";
+arc ->;
+
+move to A .e;
+arrow right "Y" "";
+box "is Argument" "Separator";
+arc ->;
+
+move to P .e;
+arrow right "Y" "";
+box "is Open" "Parentesis";
+arc ->;
+
+move to C .e;
+arrow right "Y" "";
+box "is Clse" "Parentesis";
+arc ->;
+line 6.5;
+arc;
+arrow to S .e;
+.PE

@@ -1,0 +1,41 @@
+is Operator
+.PS
+down;
+box "is Operator";
+arrow;
+S: ellipse "S";
+arrow "Y" ljust;
+box "t = s.pop"
+arrow;
+T: ellipse "t == '('";
+arrow "Y" ljust;
+box "t = s.peek";
+arrow;
+F: ellipse "t.isF";
+arrow "N" ljust;
+R: circle "R";
+
+# comensem per no es parentesis
+move to T .w;
+left;
+arrow "N" "";
+box "q.add t";
+move to last box .n;
+up;
+arrow;
+line 1;
+arc cw;
+arrow to S .w;
+
+move to S .e;
+arrow "N" "";
+circle "Error";
+
+move to F .e;
+arrow "Y" "";
+box "q.add s.pop";
+move to last box .s;
+arrow down;
+arc cw;
+arrow to R .e;
+.PE
