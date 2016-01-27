@@ -1,9 +1,11 @@
 Idea general
 .PS
 down;
-S: ellipse "S";
+circle "Begin";
+arrow;
+T: ellipse "tok";
 arrow "Y" ljust;
-box "r = S.next";
+box "r = tok.next";
 arrow;
 D: ellipse "r.isD";
 arrow "N" ljust;
@@ -46,9 +48,33 @@ arc ->;
 
 move to C .e;
 arrow right "Y" "";
-box "is Clse" "Parentesis";
+box "is Close" "Parentesis";
 arc ->;
 line 6.5;
 arc;
-arrow to S .e;
+arrow to T .e;
+
+move to T.w;
+arrow "N" "";
+S: ellipse "S";
+
+move to S .s;
+down;
+arrow "Y" ljust;
+box "t = s.pop";
+arrow;
+E: ellipse "t == '('"; # aquest nom com a end xD, no sabia que posar
+arrow "Y" ljust;
+circle "Error";
+
+move to E .w;
+left;
+arc cw;
+line 1.5;
+arc cw ->;
+
+move to S .n;
+up;
+arrow "N" ljust;
+circle "End";
 .PE
