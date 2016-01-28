@@ -1,7 +1,7 @@
-is Operator
+is ')'
 .PS
 down;
-box "is Operator";
+box "is Close" "Parentesis";
 arrow;
 S: ellipse "S";
 arrow "Y" ljust;
@@ -22,8 +22,7 @@ arrow "N" "";
 box "q.add t";
 move to last box .n;
 up;
-arrow;
-line 1;
+line 1.5;
 arc cw;
 arrow to S .w;
 
@@ -35,7 +34,7 @@ move to F .e;
 arrow "Y" "";
 box "q.add s.pop";
 move to last box .s;
-arrow down;
+line down;
 arc cw;
 arrow to R .e;
 .PE

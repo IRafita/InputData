@@ -3,7 +3,7 @@ is digit
 down;
 box "is digit";
 arrow;
-box "q.add ( t )";
+box "q.add t";
 arrow;
-box "R";
+circle "R";
 .PE

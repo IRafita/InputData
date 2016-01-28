@@ -20,7 +20,7 @@ circle "R";
 # ara a fer el que falta
 left;
 move to T .w;
-arc -> "Y" rjust;
+arc -> "Y";
 T1: ellipse "t \< 0";
 
 move to T1 .e;
@@ -29,12 +29,13 @@ arc cw -> "Y";
 
 move to T1 .w;
 left;
-arc -> diameter .75 "N";
+arrow .125 "N" "";
+arc;
 
 # el gran no
 move to S .w;
 left;
-line 0.75 ->;
+line 0.75 -> "N" "";
 arc;
 line 4.5;
 arc;
@@ -42,9 +43,9 @@ arrow to B .w;
 
 move to T .e;
 right;
-arc cw ->;
+arc cw -> "N";
 T2: ellipse "t \<= 0";
-line -> "N" ljust;
+line "N" ljust;
 line;
 arc cw ->;
 

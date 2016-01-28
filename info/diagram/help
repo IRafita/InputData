@@ -31,3 +31,11 @@ A: box ...;
 	rjust
 	above
 	below
+
+
+box	.75 W	.5 H
+circle	.5 D
+ellpse	.75 W	.5 H
+arc	.5 R
+line	.5 L
+arrow	.5 L
