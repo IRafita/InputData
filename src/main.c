@@ -1,9 +1,10 @@
-#include "define.h"
-#include "FirstParse.h"
+#include <stdio.h>
+#include "Parser/parser.h"
 
 int main ( int argc, char *argv[] )
 {
 	if ( argc == 2 )
-		ParseCalculator ( argv[1] );
+		if ( DefineDeclarePreCalcul ( argv[1] ) )
+			printf ( "One error!\n " );
 return 0;
 }

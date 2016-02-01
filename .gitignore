@@ -7,3 +7,6 @@ parsing
 
 # sortida del PostScript
 *.eps
+
+# sortida del C
+a.out
