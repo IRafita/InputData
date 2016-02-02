@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "readEstandardDefinitions.h"
 
 #include "../../Libs/Array.h"
 /*
@@ -16,7 +16,14 @@ es aquell que es genera a partir d'espais
 Nomes reclama que les definicions no siguin iguals
 */
 int EstandardGeneratingDefinitions ( f )
-	FILE f;
+	FILE * f;
 {
+	char c;
+	c = getc ( f );
+	while ( c != EOF )
+	{
+		printf ( "%c", c );
+	c = getc ( f );
+	}
 return 0;
 }
