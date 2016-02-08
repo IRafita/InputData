@@ -1,6 +1,5 @@
 #include "define.h"
 /*
-is zero, is correct
-is not zero, is not correct
+Aqui esta, quan a partir del nom del fitxer, 
 */
-int DefineDeclarePreCalcul ( char * );
+Token * DefineDeclarePreCalcul ( char * );

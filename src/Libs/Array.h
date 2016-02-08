@@ -1,3 +1,5 @@
+#ifndef _ARRAY_H
+#define _ARRAY_H
 #include <stdlib.h>
 
 /* http://stackoverflow.com/questions/3536153/c-dynamically-growing-array
@@ -18,3 +20,4 @@ int initArray ( Array*, size_t initSize, size_t byts );
 int addArray ( Array*, void * );
 void miniumArray ( Array* );
 void freeArray ( Array* );
+#endif /* _ARRAY_H */

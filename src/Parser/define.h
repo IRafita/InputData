@@ -1,3 +1,5 @@
+#ifndef _DEFINE_H
+#define _DEFINE_H
 typedef struct
 {
 	enum
@@ -11,4 +13,36 @@ typedef struct
 		openParentesis			= 0b110,
 	} statToken;
 	char *content;
+	void *others;
 } Token;
+
+#endif /* _DEFINE_H */
+/*
+
+*/
+#ifndef _DEFINE_H
+#define _DEFINE_H
+
+#endif /* _DEFINE_H */
+/*
+no recordava com se feie
+me recordat del cole, minikernel
+https://github.com/dsanchez91/Minikernel/blob/master/minikernel/include/kernel.h
+I he trobat aquest que ho ha pujat a internet jiji
+*/
+/*
+statToken
+	Per saber que es:
+		- operant
+		- digit
+		- separador
+		- )
+		- funcio
+		- (
+content
+	String on hi ha el que s'ha entrat veritablement
+		-> Com s'ordenara el tot, per a ser buscat tot seguit
+others
+	operant, necessitem saber la precedencia i la associetat
+	funcio, necessitem saber quantes entrades vol, que vol que siguin aquestes entrades...
+*/

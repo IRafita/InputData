@@ -24,3 +24,7 @@ Un cop fet tot aixo,
 llavors ja podem comezar a fer el que realment vole :)
 
 Contar quant de gran haura de ser el vector, i un cop calculat, comenzar a fer magia :)
+
+=== Critica ===
+De moment critico aquest apartat perque opino que esta molt mal montat.
+Espero que quan acabi un apartat del projecte aquest agafi mes forma

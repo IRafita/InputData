@@ -1,21 +1,28 @@
 #include <stdio.h>
 #include "parser.h"
-#include "readFile/readEstandardDefinitions.h"
+#include "readFile/read.h"
 
-int DefineDeclarePreCalcul ( c )
+/*
+Tot el que toca a l'esquerra, es per debugeixar millor i detectar mes facilment els errors
+Normament al resultat final aixo ja no hauria d'estar ;)
+
+Aqui es defineix tot abans de poguer usar el Shunting-Yard Algorithm
+*/
+Token * DefineDeclarePreCalcul ( c )
 	char * c;
 {
-printf ( "Eixit\n" );
 	FILE * f;
+	Token *a;
+printf ( "Eixit\n" );
 
 printf ( "Existeixo\n" );
 	f = fopen ( c, "r" );
 	if ( f == NULL )
-	{ printf ( "This file don't exist: %s\n", c ); return 1; }
+	{ printf ( "This file don't exist: %s\n", c ); return NULL; }
 else printf ( "File existeix\n" );
 
-	EstandardGeneratingDefinitions ( f );
+	a = EstandardGeneratingDefinitions ( f );
 
 fclose ( f );
-return 0;
+return a;
 }

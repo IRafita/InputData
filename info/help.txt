@@ -1,0 +1,2 @@
+Una web que indica llibreries per a C, de precisio arbritaria
+	https://en.wikipedia.org/wiki/List_of_arbitrary-precision_arithmetic_software
