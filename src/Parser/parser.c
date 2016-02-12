@@ -12,7 +12,9 @@ Token * DefineDeclarePreCalcul ( c )
 	char * c;
 {
 	FILE * f;
+	Array e;
 	Token *a;
+
 printf ( "Eixit\n" );
 
 printf ( "Existeixo\n" );
@@ -21,7 +23,11 @@ printf ( "Existeixo\n" );
 	{ printf ( "This file don't exist: %s\n", c ); return NULL; }
 else printf ( "File existeix\n" );
 
-	a = EstandardGeneratingDefinitions ( f );
+	e = declareDefinition ( f );
+	a = e.array;
+
+	while ( e.used-- )
+		printf ( "Def: %s\n", a[e.used].content );
 
 fclose ( f );
 return a;

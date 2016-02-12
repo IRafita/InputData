@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "../define.h"
+#include "../../Libs/Array.h"
 
 /*
 Llegeix poc a poc per a generar totes les definicions
 */
-Token * EstandardGeneratingDefinitions ( FILE * );
+Array declareDefinition ( FILE * );
