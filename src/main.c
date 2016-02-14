@@ -10,10 +10,10 @@ int main ( int argc, char *argv[] )
 {
 	Token * a;
 
-	if ( argc == 2 )
+	if ( argc == 3 )
 	{
-		a = DefineDeclarePreCalcul ( argv[1] );
-		if ( a )
+		a = DefineDeclarePreCalcul ( argv[1], argv[2] );
+		if ( a != NULL )
 			printf ( "Tot correcte ;)\n" );
 		else
 			printf ( "One error!\n " );

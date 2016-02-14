@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../define.h"
+#include "../readDefine.h"
 #include "../../Libs/Array.h"
 
 /*

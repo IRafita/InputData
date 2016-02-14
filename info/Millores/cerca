@@ -1,0 +1,9 @@
+read.c
+	Tenim que busca elements, ara fem anar un switch
+	1. Gasta molt codi
+	2. Fa moltes busquedes inecessaries...
+	Llavors poder fer una opcio de cerca binaria
+
+Futur
+	Tindrem que definir que es el que hi ha per pantalla
+	Aixi que si tarda el menys possible, millor que millor ;)

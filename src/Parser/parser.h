@@ -2,4 +2,4 @@
 /*
 Aqui esta, quan a partir del nom del fitxer, 
 */
-Token * DefineDeclarePreCalcul ( char * );
+Token * DefineDeclarePreCalcul ( char *, char * );

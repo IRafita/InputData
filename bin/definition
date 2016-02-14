@@ -1,0 +1,35 @@
+  bynary operand
+^
+ 4 Left
+*
+ 3 Left
+/
+ 3 Left
++
+ 2 Left
+-
+ 2 Left
+  [De fet, m'agradaria poguer escriure les propietats, commutatiu, distributiu... Aixi poder]
+  [treballar a un nivell mes teoric i menys
+  digit
+N
+E
+Q
+R
+C
+  argument separator
+,
+;
+  close parentesis
+)
+}
+]
+  function
+f
+sin
+exp
+  open parentesis
+(
+{
+[
+

@@ -6,29 +6,32 @@
 Tot el que toca a l'esquerra, es per debugeixar millor i detectar mes facilment els errors
 Normament al resultat final aixo ja no hauria d'estar ;)
 
-Aqui es defineix tot abans de poguer usar el Shunting-Yard Algorithm
+Aqui:
+	Primer llegir definicions
+	Netejem i pulim les definicions ( Possibles errors )
+
+	Llegim el que volen fer
+	Pasem el SYA
 */
-Token * DefineDeclarePreCalcul ( c )
-	char * c;
+Token * DefineDeclarePreCalcul ( def, op )
+	char * def; /* Definicions */
+	char * op;  /* Operans */
 {
-	FILE * f;
-	Array e;
-	Token *a;
+	FILE * fDef, * fOp;
+	Array dec;
 
-printf ( "Eixit\n" );
+	fDef = fopen ( def, "r" );
+	if ( fDef == NULL )
+	{ printf ( "This file don't exist: %s\n", def ); return NULL; }
+	fOp = fopen ( op, "r" );
+	if ( fOp == NULL )
+	{ printf ( "This file don't exist: %s\n", op ); return NULL; }
 
-printf ( "Existeixo\n" );
-	f = fopen ( c, "r" );
-	if ( f == NULL )
-	{ printf ( "This file don't exist: %s\n", c ); return NULL; }
-else printf ( "File existeix\n" );
+/* Obtenim totes les definicions en brut */
+	dec = declareDefinition ( fDef );
 
-	e = declareDefinition ( f );
-	a = e.array;
-
-	while ( e.used-- )
-		printf ( "Def: %s\n", a[e.used].content );
-
-fclose ( f );
-return a;
+fclose ( fDef );
+fclose ( fOp );
+freeArray ( &dec );
+return NULL;
 }

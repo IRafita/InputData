@@ -6,3 +6,4 @@ all:
 	cd Libs; make array
 	cd Parser; make all
 	gcc Parser/parser.o Parser/readFile/read.o Libs/Array.o main.c -o lola -g -ansi
+	mv lola ../bin

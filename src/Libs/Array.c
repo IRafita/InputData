@@ -35,6 +35,14 @@ int addArray ( a, e )
 return 0;
 }
 
+/* Aixo no esta ni testeixat ni probat, no ho poso actualment al fitxer _H, per aquest mateix motiu */
+void * getArray ( a, i )
+	Array *a;
+	int i; /* index */
+{
+	return a + a->size * a->bits;
+}
+
 /* no retorna error, ja que teoricament sempre se fa petit */
 void miniumArray ( a )
 	Array *a;
