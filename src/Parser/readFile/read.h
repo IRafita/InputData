@@ -5,4 +5,4 @@
 /*
 Llegeix poc a poc per a generar totes les definicions
 */
-Array declareDefinition ( FILE * );
+Array declareDefinitionEasy ( FILE * );

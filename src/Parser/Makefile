@@ -3,4 +3,5 @@ parser:
 
 all:
 	cd readFile; make all
+	cd control; make all
 	make

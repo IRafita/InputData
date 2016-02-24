@@ -33,7 +33,7 @@ void PrintTokenPosition ( o )
 	int i;
 
 	for ( i = 0; i < o.used; i++ )
-		printf ( "D: %s\n", ( ( TokenPosition * )o.array ) [i].t.content );
+		printf ( "Previ: %s\n", ( ( TokenPosition * )o.array ) [i].t.content );
 }
 
 /*
@@ -47,7 +47,7 @@ WARNING
 Problema gros, no te en compte els espais en blanc, fent que la enumeracio vagi malament...
 S'ha d'utilitzar un altre metode
 */
-Array declareDefinition ( f )
+Array declareDefinitionEasy ( f )
 	FILE * f;
 {
 	Array o; /* Token Position */
@@ -151,6 +151,7 @@ printf ( "Waring, you input:\n%s\nAnd like\n%s\nOn line %d\n\n", line+2, stringD
 	}
 free ( allFile );
 
+
 /*
 PrintTokenPosition ( o );
 */
@@ -159,7 +160,7 @@ PrintTokenPosition ( o );
 /*	if ( initArray ( &Tout, o.used, sizeT ) ) { printf ( "No hi ha espai pel Tout\n" ); exit ( 1 ); }
 	for ( i = 0; i < o.used; i++ )
 		addArray ( &Tout, &( ( ( TokenPosition * ) o.array)[i].t) );
-
+*
 PrintTokenPosition ( o );
 */
 return o;
