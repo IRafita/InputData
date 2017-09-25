@@ -6,6 +6,7 @@ typedef enum
 	digit				= 0b001, /* no m'agrada el nom de digit, voldria que incloes variables... */
 	argumentSeparator		= 0b010,
 	closeParentesis			= 0b011,
+	preDigit			= 0b100, /* Necessitat, ja que els Naturals no son un digit, sino un concepte... */
 /*	functionANDopenParentesis	= 0b100, Crec que millor no el faci anar */
 	function			= 0b101,
 	openParentesis			= 0b110,

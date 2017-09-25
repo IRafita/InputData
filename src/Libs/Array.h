@@ -16,8 +16,8 @@ typedef struct
 
 /* Return 0, is correct */
 /* Return not 0, is error */
-int initArray ( Array*, size_t initSize, size_t byts );
-int addArray ( Array*, void * );
-void miniumArray ( Array* );
-void freeArray ( Array* );
+int initArray ( Array *, size_t initSize, size_t byts );
+int addArray ( Array *, void * );
+void miniumArray ( Array * );
+void freeArray ( Array * );
 #endif /* _ARRAY_H */

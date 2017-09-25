@@ -47,7 +47,7 @@ WARNING
 Problema gros, no te en compte els espais en blanc, fent que la enumeracio vagi malament...
 S'ha d'utilitzar un altre metode
 */
-Array declareDefinitionEasy ( f )
+Array declareDefinition ( f )
 	FILE * f;
 {
 	Array o; /* Token Position */
@@ -164,4 +164,11 @@ PrintTokenPosition ( o );
 PrintTokenPosition ( o );
 */
 return o;
+}
+
+int declareVariables ( list )
+	Array * list;
+{
+	printf ( "De moment aixo no fa res el declare Variables" );
+return 0;
 }

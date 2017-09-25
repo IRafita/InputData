@@ -8,12 +8,12 @@ Segurament per a posteriori usar un programa tal que pugui fer operacions amb la
 */
 int main ( int argc, char *argv[] )
 {
-	Token * a;
+	Array a;
 
 	if ( argc == 3 )
 	{
 		a = DefineDeclarePreCalcul ( argv[1], argv[2] );
-		if ( a != NULL )
+		if ( a.used )
 			printf ( "Tot correcte ;)\n" );
 		else
 			printf ( "One error!\n " );

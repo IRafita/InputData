@@ -24,7 +24,7 @@ Aqui:
 	Llegim el que volen fer
 	Pasem el SYA
 */
-Token * DefineDeclarePreCalcul ( def, op )
+Array DefineDeclarePreCalcul ( def, op )
 	char * def; /* Definicions */
 	char * op;  /* Operans */
 {
@@ -33,23 +33,22 @@ Token * DefineDeclarePreCalcul ( def, op )
 
 	fDef = fopen ( def, "r" );
 	if ( fDef == NULL )
-	{ printf ( "This file don't exist: %s\n", def ); return NULL; }
+	{ printf ( "This file don't exist: %s\n", def ); freeArray ( &dec ); return dec; }
 	fOp = fopen ( op, "r" );
 	if ( fOp == NULL )
-	{ printf ( "This file don't exist: %s\n", op ); return NULL; }
+	{ printf ( "This file don't exist: %s\n", op ); freeArray ( &dec ); return dec; }
 
 /* Obtenim totes les definicions en brut */
-	dec = declareDefinitionEasy ( fDef ); /* Queda pendent aconseguir que funcioni  les linies buides */
+	dec = declareDefinition ( fDef ); /* Queda pendent aconseguir que funcioni  les linies buides */
 
 /*	PrintTokenPosition2 ( dec );*/
 /* Ordenem per comprovar que no hi hagi elements repetits */
-	if ( CheckRepeatEasy ( dec ) )
-		return NULL;
-
-
+/*	if ( CheckRepeatEasy ( dec ) )*/ /* Queda pendent fer que mostri en quines linies i el perque de l'error */
+		/*return NULL;, estic pensant deixar aixo pel final... */
+	declareVariables ( &dec );
 
 fclose ( fDef );
 fclose ( fOp );
 freeArray ( &dec );
-return NULL;
+return dec;
 }

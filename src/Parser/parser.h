@@ -1,5 +1,7 @@
 #include "define.h"
+#include "../Libs/Array.h"
 /*
 Aqui esta, quan a partir del nom del fitxer, 
+Retornara Token
 */
-Token * DefineDeclarePreCalcul ( char *, char * );
+Array DefineDeclarePreCalcul ( char *, char * );
